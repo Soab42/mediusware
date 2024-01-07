@@ -1,3 +1,71 @@
 @import "abstract/variables";
 @import 'bootstrap/scss/bootstrap.scss';
 @import "abstract/base";
+
+
+.error {
+    background-color: #f8d7da; // Light red background color
+    color: #721c24; // Dark red text color
+    padding: .2rem 1rem;
+    border: 1px solid #f5c6cb; // Border color
+    border-radius: 0.25rem; // Rounded corners
+    width: fit-content;
+  }
+  .loading{
+    height: 50rem;
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+  }
+
+.bar1{
+  height: 5rem;
+  width: 5rem;
+  background: #000;
+  animation :slideRight 1s linear .5s infinite;
+}
+.bar2{
+  height: 5rem;
+  width: 5rem;
+  background: #000;
+  transform: translateY(5rem);
+  animation :slideLeft 1s linear infinite;
+
+}
+
+
+@keyframes slideLeft {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5rem);
+  }
+}
+
+@keyframes slideRight {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5rem);
+  }
+}
+
+
+
+
+  .tableData{
+    width: 45rem;
+    height: 35rem;
+    font-size: .8rem;
+  }
+
+  .checkBox{
+    display: flex;
+    gap:5px;
+    padding:3px;
+    font-weight: 600;
+  }
